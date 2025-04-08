@@ -1,11 +1,13 @@
-Reproducer for https://github.com/quarkiverse/quarkus-minio/issues/411#issuecomment-2783398913
+Reproducer for <https://github.com/quarkiverse/quarkus-minio/issues/411#issuecomment-2783398913>
 
 To reproduce, make sure testcontainer reuse is enabled for instance by modifying ~/.testcontainers.properties file:
+
 ```properties
-testcontainers.reuse.enable=false
+testcontainers.reuse.enable=true
 ```
 
 Then run test:
+
 ```bash
 ./mvnw test
 ```
